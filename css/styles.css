@@ -25,6 +25,7 @@ nav{
 #hamburger-cont{
     position: relative;
     padding: 1em;
+    cursor: pointer;
   
 }
 #hamburger-menu{

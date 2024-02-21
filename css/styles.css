@@ -13,20 +13,63 @@ header{
     height: 8em;
 }
 nav{
+    position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 100%;
-    margin-right:  2em;
+}
+#close-cont{
+    position: relative;
+    cursor: pointer;
+}
+#close-btn{
+    height: 8px;
+    width: 80px;
+    border-radius: 15px;
+    background-color: yellow;
+    transform: rotate(45deg);
+    position: absolute;
+    z-index: 2;
+}
+#close-btn::after{
+    content: "";
+    height: 8px;
+    width: 80px;
+    border-radius: 15px;
+    background-color: yellow;
+    position: absolute;
+    transform: rotate(-90deg);
 }
 #list-item-cont{
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    color: white;
+    background-color: black;
+    height: 100vh;
+    width: 90%;
+    transition: transform .5s ease-in;
+    
+}
+.menu-slide{
+    transform: translateX(100%);
+}
+#list-item-cont li {
+    list-style-type: none;
+    padding-bottom: .5em;
+    font-size: xxx-large;
 }
 #hamburger-cont{
     position: relative;
-    padding: 1em;
     cursor: pointer;
-  
+    display: flex;
+    align-items: center;
+    padding-right: 2em;
+
 }
 #hamburger-menu{
     background-color: #FBBD60;

@@ -53,11 +53,13 @@ nav{
     height: 100vh;
     width: 90%;
     transition: transform .5s ease-in;
+    transform: translateY(-100%);
+    opacity: -1;
 }
-.menu-slide{
+/* .menu-slide{
     transform: translateX(100%);
     
-}
+} */
 #list-item-cont li {
     list-style-type: none;
     padding-bottom: .5em;
@@ -102,10 +104,12 @@ nav{
     #list-item-cont{
         position: relative;
         transition: initial;
-        transform: initial;
+        
         height: initial;
         width:50%;
         background-color: initial;
+        opacity: 1;
+        top: 40px;
     }
     #list-item-cont ul{
         display: flex;
